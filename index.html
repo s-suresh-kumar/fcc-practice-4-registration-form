@@ -113,12 +113,23 @@ Now, if you try to submit the form without filling in the required fields, you w
   The above is a regular expression which matches eight or more lowercase letters or the digits 0 to 5. Then, remove the minlength attribute, and try it out.
   <label for="new-password">Create a New Password: <input minlength=8 id="new-password" type="password" required /></label> -->
 
+  <!-- Step 24
+  Let us go to the next part of the registration form. This section will ask for the type of account the user is opening, and will confirm the user has read the terms and conditions.
+  
+  Start by adding three label elements to the second fieldset. -->
+
   <label for="first-name">Enter Your First Name: <input id="first-name" type="text" required /></label>
   <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required /></label>
   <label for="email">Enter Your Email: <input id="email" type="email" required /></label>
   <label for="new-password">Create a New Password: <input pattern="[a-z0-5]{8,}" id="new-password" type="password" required /></label>
 </fieldset>
-    <fieldset></fieldset>
+    <fieldset>
+
+      <label></label>
+      <label></label>
+      <label></label>
+
+    </fieldset>
     <fieldset></fieldset>
     <input type="submit" value="Submit">
 
