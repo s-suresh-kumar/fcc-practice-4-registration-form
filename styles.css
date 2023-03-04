@@ -82,8 +82,18 @@ input,textArea,select {
 /* Step 50
 Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%. */
 
+/* Step 51
+Add some space between the .inline elements and the label text, by giving a right margin of 0.5em. Also, set all the other margin to 0. */
+
+/* Step 52
+If you look close enough, you will notice the .inline elements are too high on the line.
+
+To combat this, set the vertical-align property to middle. */
+
 .inline {
   width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
 
 /* Step 16
