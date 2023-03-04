@@ -79,6 +79,13 @@ input,textArea,select {
   margin-top:10px;
 }
 
+/* Step 50
+Select only the .inline elements, and give them width of unset. This will remove the earlier rule which set all the input elements to width: 100%. */
+
+.inline {
+  width: unset;
+}
+
 /* Step 16
 The rem unit stands for root em, and is relative to the font size of the html element.
 
